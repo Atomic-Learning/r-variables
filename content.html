@@ -1,3 +1,5 @@
+<h1>Variables in R</h1>
+
 In R, a variable is a name used in source code to reference a storage location in the computer's memory. We can create a variable by writing the name of the variable followed by an assignment operator (<code>&lt;-</code> or <code>=</code>) and then the value we want to store in that variable. If we use the variable name later in our code, R will replace it with the value we assigned to it. In the example below, we create a variable called <code>age</code> and assign it the value <code>25</code>. When we print the value of <code>age</code>, R outputs <code>[1] 25</code>.
 
 <r-cell>age &lt;- 25
@@ -9,7 +11,8 @@ print(age)
 When naming variables in R, there are a few important rules to follow:
 <ul>
     <li>Variable names can only contain letters (a-z, A-Z), numbers (0-9), and underscores (_) or periods (.).</li>
-    <li>Variable names cannot start with a number or a period followed by a number. For example, <code>1st_place</code> is not a valid variable name.</li>
+    <li>Variable names cannot start with a number. For example, <code>1st_place</code> is not a valid variable name.</li>
+    <li>Variable names cannot start with a period followed by a number. For example, <code>.1st_place</code> is not a valid variable name.</li>
     <li>Variable names are case-sensitive. This means that <code>age</code>, <code>Age</code>, and <code>AGE</code> are considered different variables.</li>
     <li>Variable names cannot contain spaces or special characters (except underscores and periods).</li>
 </ul>
@@ -35,11 +38,11 @@ In addition, variables should not use R reserved words (keywords), as these have
     </tr>
     <tr>
         <td><code>NULL</code></td>
-        <td><code>NA</code></td>
-        <td><code>NaN</code></td>
         <td><code>Inf</code></td>
         <td><code>&lt;-</code></td>
         <td><code>&lt;&lt;-</code></td>
+        <td></td>
+        <td></td>
     </tr>
 </table>
 
