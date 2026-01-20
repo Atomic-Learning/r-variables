@@ -1,11 +1,11 @@
-In R, a variable is a name used in source code to reference a storage location in the computer's memory. We can create a variable by writing the name of the variable followed by an assignment operator (<code>&lt;-</code> or <code>=</code>) and then the value we want to store in that variable. If we use the variable name later in our code, R will replace it with the value we assigned to it. In the example below, we create a variable called `age` and assign it the value `25`. When we print the value of `age`, R outputs `[1] 25`.
+In R, a variable is a name used in source code to reference a storage location in the computer's memory. We can create a variable by writing the name of the variable followed by an assignment operator (<code>&lt;-</code> or <code>=</code>) and then the value we want to store in that variable. If we use the variable name later in our code, R will replace it with the value we assigned to it. In the example below, we create a variable called <code>age</code> and assign it the value <code>25</code>. When we print the value of <code>age</code>, R outputs <code>[1] 25</code>.
 
 <r-cell>age &lt;- 25
 print(age)
 </r-cell>
 
 <h2>Variable Naming Rules</h2>
-    
+
 When naming variables in R, there are a few important rules to follow:
 <ul>
     <li>Variable names can only contain letters (a-z, A-Z), numbers (0-9), and underscores (_) or periods (.).</li>
@@ -51,13 +51,13 @@ Although the prohibition of reserved words helps avoid some naming conflicts, it
 print(10)  # This will cause an error
 </r-cell>
 
-You should have seen an error message indicating that the `print` function cannot print a character string in this context. This is because R is trying to use our variable `print` (which is a character string) instead of the built-in `print` function. Reload the page to reset the environment and remove the variable.
+You should have seen an error message indicating that the <code>print</code> function cannot print a character string in this context. This is because R is trying to use our variable <code>print</code> (which is a character string) instead of the built-in <code>print</code> function. Reload the page to reset the environment and remove the variable.
 
 To avoid such issues, it is a good practice to choose variable names that are unlikely to clash with built-in function names.
 
 <h2>Variables and Expressions</h2>
 
-If the code on the right-hand side of the assignment operator is an expression, R will first evaluate the expression and then assign the resulting value to the variable. For example, in the code below, we create a variable called <code>x</code> and assign it the result of the expression <code>5 + 3</code>. R evaluates the expression to get <code>8</code>, and then assigns that value to <code>x</code>. When we print the value of <code>x</code>, R outputs `[1] 8`.
+If the code on the right-hand side of the assignment operator is an expression, R will first evaluate the expression and then assign the resulting value to the variable. For example, in the code below, we create a variable called <code>x</code> and assign it the result of the expression <code>5 + 3</code>. R evaluates the expression to get <code>8</code>, and then assigns that value to <code>x</code>. When we print the value of <code>x</code>, R outputs <code>[1] 8</code>.
 
 <r-cell>x &lt;- 5 + 3
 print(x)
@@ -65,7 +65,7 @@ print(x)
 
 <h2>Changing Variable Values</h2>
 
-We can change the value of a variable by assigning a new value to it. For example, in the code below, we first create a variable called `count` and assign it the value `10`. We then change the value of `count` to `20` by assigning a new value to it. When we print the value of `count`, R outputs `[1] 20`.
+We can change the value of a variable by assigning a new value to it. For example, in the code below, we first create a variable called <code>count</code> and assign it the value <code>10</code>. We then change the value of <code>count</code> to <code>20</code> by assigning a new value to it. When we print the value of <code>count</code>, R outputs <code>[1] 20</code>.
 
 <r-cell>count &lt;- 10
 count &lt;- 20
