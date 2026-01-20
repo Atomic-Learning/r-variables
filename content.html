@@ -43,18 +43,6 @@ In addition, variables should not use R reserved words (keywords), as these have
     </tr>
 </table>
 
-<h2>Variable Name Clashes</h2>
-
-Although the prohibition of reserved words helps avoid some naming conflicts, it is still possible to accidentally overwrite important built-in functions or objects by using the same name for a variable. For example, if we create a variable called <code>print</code>, our variable will hide (or "shadow") the built-in <code>print</code> function, and we will no longer be able to use it until we delete our variable. For example, the code cell below shows what happens when we create a variable called <code>print</code> and then try to use the <code>print</code> function.
-
-<r-cell>print &lt;- "Hello, World!"  # This creates a variable called 'print'
-print(10)  # This will cause an error
-</r-cell>
-
-You should have seen an error message indicating that the <code>print</code> function cannot print a character string in this context. This is because R is trying to use our variable <code>print</code> (which is a character string) instead of the built-in <code>print</code> function. Reload the page to reset the environment and remove the variable.
-
-To avoid such issues, it is a good practice to choose variable names that are unlikely to clash with built-in function names.
-
 <h2>Variables and Expressions</h2>
 
 If the code on the right-hand side of the assignment operator is an expression, R will first evaluate the expression and then assign the resulting value to the variable. For example, in the code below, we create a variable called <code>x</code> and assign it the result of the expression <code>5 + 3</code>. R evaluates the expression to get <code>8</code>, and then assigns that value to <code>x</code>. When we print the value of <code>x</code>, R outputs <code>[1] 8</code>.
