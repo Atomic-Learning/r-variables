@@ -1,22 +1,18 @@
 {
-    "title": "",
-    "slug": "",
-    "description": "",
+    "title": "R: Variables",
+    "slug": "r-variables",
+    "description": "An introduction to variables in R.",
     "authors": [
-        "",
-        ""
+        "chris-cooling"
     ],
     "tags": [
-        "",
-        ""
+        "r"
     ],
-    "duration": 0,
+    "duration": 5,
     "prerequisites": [
-        "",
-        ""
     ],
     "related": [
-        "",
-        ""
+        "r-arithmetic",
+        "r-deleting-variables"
     ]
 }
