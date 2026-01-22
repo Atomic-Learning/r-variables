@@ -10,7 +10,8 @@
     ],
     "duration": 5,
     "prerequisites": [
-        "r-print"
+        "r-print",
+        "programming-variables"
     ],
     "related": [
         "r-arithmetic",
